@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+<meta name="description" content="A collection of links for Project creating coding and interaction."/>
+
+<title>Graphics and Interaction Resources - Project Elevate</title>
+	
+</head>
+
+<body>
+
+	<!-- navigation starts here -->
+	<div id="nav">
+		
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="download.html">Download</a></li>
+			<li><a href="screenshots.html">Screenshots</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>			
+			<li id="current"><a href="links.html">Links</a></li>
+		</ul>
+	
+	</div>
+
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">	 
+	
+		<div id="sidebar" >	
+		
+			<h3>Page Updated</h3>	
+			<p>6 January 2012</p>
+				
+			<h3>Description</h3>			
+			<p>
+			Not all of these resources are directly relevant to
+			Project Elevate. They just show some of the things that
+			I am interested in.
+			</p>
+				
+			<h3>Nooface</h3>
+			<p><a href="http://nooface.net/">Nooface</a> is a very interesting 
+			News site (using the same back-end as slashdot). Big number of categories.
+			Deals with graphics, user interfaces, virtual reality, visualization
+			and new applications interesting to usability. 
+			Contains news missed by other online media. Suffers from
+			very slow updates and a limited user base.
+			</p>
+
+
+			<h3>Something missing?</h3>
+			<p>
+			Do you a know a cool technology/application not listed
+			here? <a href="contact.html">Tell me about it!</a>
+			</p>
+		
+		</div>	
+	
+		<div id="main">		
+				
+		<h2>Graphics</h2>
+		<p>
+		<a href="http://www.enlightenment.org">EFL</a><br/>
+		The Enlightenment foundation Libraries. Project Elevate used to depend on them.
+		Very powerful and very optimized even for older machines. They are pixel based
+		but the resizing algorithm is really great. They include an semi-compiled interface description
+		language full with scripting support and embedded image resources. They power the next version
+		of Enlightenment (version 17).<br/>
+		<strong>pros:</strong> Very fast. Very powerful. Pixel based. Almost a complete framework.<br/>
+		<strong>cons:</strong> Not released yet. No scalable text. No rotation in Edje/Evas.
+		</p>
+
+		<p>
+		<a href="http://cairographics.org/">Cairo</a><br/>
+		Vector graphics at their best. Cairo already powers recent versions of gtk+ and at some
+	point it may be included in openoffice, inkscape and Mozilla. Multiple back-ends include
+PS, PDF , SVG and PNG surfaces. Seems to be the future (at least for gtk/gnome apps)
+	Optional mapping to OpenGL via the glitz libraries for maximum performance.
+	Project Elevate uses Cairo for its graphics.<br/>
+	<strong>pros:</strong> Very high quality. Frozen API. Widely used. Resolution independent interfaces.<br/>
+	<strong>cons:</strong> Not as mature. Needs optimizations. Too low level. Needs a canvas library on top.
+	</p>
+
+	<p>
+	<a href="http://code.google.com/p/skia/">Skia Graphics Engine</a><br/>
+	Graphic library similar to Cairo bought by Google in 2005 and open-sourced along with Google 
+	Chrome. It is in C++ and powers Google Chrome, Chrome OS and Android. Offers
+	some interesting features such 3x3 transformation matrices, optional OpenGL acceleration
+	and built-in animation. Relatively new so benchmarks are not available yet.<br/>
+	<strong>pros:</strong> Mature codebase. Advanced features. Acceleration is optional.<br/>
+	<strong>cons:</strong> Almost no documentation. Only used by Google so far.
+	</p>
+
+	<p>
+	<a href="http://www.amanith.org/">Amanith</a><br/>
+	Another vector graphics library. Although it is in C++ and comes bundled with qt examples
+	it is NOT the qt/KDE opponent of cairo. It depends on OpenGL and seems fairly mature.
+	Not a standard package in distributions though, unlike Cairo.<br/>
+	<strong>pros:</strong> Really fast because of OpenGL. Extensive API. 3D accelerated vectors.<br/>
+	<strong>cons:</strong> Depends on OpenGL. C++ alienates some developers. A bit low level.
+	</p>
+
+	<p>
+	<a href="http://www.antigrain.com/">Antigrain</a><br/>
+	Another older Vector library. Based on C++. Geared towards scientific
+	applications and mathematical functions.<br/>
+	<strong>pros:</strong> Seems stable. Very high quality of rendering.<br/>
+	<strong>cons:</strong> C++ may alienate some developers. Animation is not a clear goal.
+	</p>
+
+
+	<p>
+	<a href="http://clutter-project.org/">Clutter</a><br/>
+	Recent canvas library. Seems to complement matchbox. Very good API
+	and integration with several other projects (e.g. gstreamer, cairo). Does not require gtk+ or any other toolkit.
+	Offers real smooth animation via OpenGL. <br/>
+	<strong>pros:</strong> Well thought API. Fast graphics. Uses GObject.<br/>
+	<strong>cons:</strong> Not mature enough. Depends on OpenGL. Fixed interfaces.
+	</p>
+
+	<p>
+	<a href="http://www.w3.org/Graphics/SVG/">SVG</a> and <a href="http://librsvg.sourceforge.net/">librsvg</a><br/>
+	SVG is the W3c standard for vector graphics. It is based on XML. It is already used
+	by Cairo, Inkscape, Adobe and has even been ported to mobile phones via the svg-small
+	and svg-tiny specifications. The full specification includes animation support attempting
+	to replace Flash in some way. KDE and GNOME can use svg icons/wallpapers for some time now.<br/>
+	<strong>pros:</strong> W3c standard. widely deployed. Seems to be the future.<br/>
+	<strong>cons:</strong> Several partial implementations. Attempts to play too many roles. 
+	</p>
+
+	<p>
+	<a href="http://www.libsdl.org/index.php">SDL</a><br/>
+	Simple DirectMedia Layer. A cross platform library giving you low level access to 
+	graphics and sound of a machine. Very thin and compact. Widely deployed even
+	by commercial games. <br/>
+	<strong>pros:</strong> Seems mature. Also supports OpenGL for extra speed.<br/>
+	<strong>cons:</strong> Main target are games and not applications. Needs a toolkit on top.
+	</p>
+
+	<h2>Interaction</h2>
+	<p>
+	<a href="http://processing.org/">Processing</a><br/>
+	A dream come true. A unique library with Java like syntax that allows non-programmers to
+	create impressive animations and interactive media. Anyone who wants to explore animation/interaction
+	in an easy and friendly way should start from here.<br/>
+	<strong>pros:</strong> Cross plaform. Familiar syntax. Can be used by non-programmers. Very mature.<br/>
+	<strong>cons:</strong> Limited for complex applications. Java is memory hungry.
+	</p>
+
+	<p>
+	<a href="http://www.openframeworks.cc/">Open Frameworks</a><br/>
+	Shares the same idea with Processing. It is written in C++ so that it can integrate easily with
+	other libraries for image recognition, physics or video. <br/>
+	<strong>pros:</strong> Cross platform. Very flexible. Very fast. Integrated video player<br/>
+	<strong>cons:</strong> Requires programming experience. Not as mature as Processing.
+	</p>
+
+	<p>
+	<a href="http://libcinder.org/">Cinder Library</a><br/>
+	Another library for creative coding in C++. While openframes is cross-platform, cinder has zero support for Linux. You must also
+	work in Xcode and Visual Studio for Mac and Windows platforms respectively. On the other hand its taps into the full capabilities of each platform by utilizing native libraries of the OS, unlike openframeworks that bundles its own libraries for everything. Also cinder is not for beginners who should better look at processing.org if they just start. <br/>
+	<strong>pros:</strong> Native support for its target platforms. Supports also Ipad/Iphone<br/>
+	<strong>cons:</strong> No Linux support. Advanced programming skills required.
+	</p>
+
+	<p>
+	<a href="http://polycode.org">Polycode Library</a><br/>
+	The newest library for creative coding also in C++. Works similar to openframeworks and cinder. It can be scripted howevever in Lua which is a major advantage for those who
+	find C++ hard. <br/>
+	<strong>pros:</strong> Can also by used by Lua instead of C++.<br/>
+	<strong>cons:</strong> No Linux support. No stable release. Geared towards games.
+	</p>
+
+	<p>
+	<a href="http://www.box2d.org/">Box 2D</a><br/>
+	The well-known Physics engine. Professional solution that powers a lot of high profile games. Written in C++.<br/>
+	<strong>pros:</strong> Very mature. Extensive application base. Cross platform. Many language bindings.<br/>
+	<strong>cons:</strong> Main focus seems to be on games.
+	</p>
+
+	<p>
+	<a href="http://code.google.com/p/chipmunk-physics/">Chipmunk Physics</a><br/>
+	Similar idea with box2d. Written in C this time.<br/>
+	<strong>pros:</strong> Integrates easily with pure C applications.<br/>
+	<strong>cons:</strong> Not as mature as box2d. 
+	</p>
+
+	<h2>Window Managers</h2>
+
+	<p>
+	<a href="http://matchbox-project.org/">Matchbox</a><br/>
+	A window manager for embedded systems. Only maximized windows.Full netwm support. 
+	Can be used on the desktop too by children or Aunt Tielly.<br/>
+	<strong>pros:</strong> Low footprint. Perfect for embedded systems.<br/>
+	<strong>cons:</strong> Limited for power users. Cannot be used by programmers.
+	</p>
+
+	<p>
+	<a href="http://www.modeemi.cs.tut.fi/~tuomov/ion/">Ion</a><br/>
+	One of the first non-overlapping window managers. Highly scriptable
+	using Lua scripts.
+	Really fast and lean. Supports also tabs on individual frames.<br/>
+	<strong>pros:</strong> Low footprint. Good for power users. Keyboard-driven.<br/>
+	<strong>cons:</strong> Too many keyboard shortcuts. Lua is not very popular.
+	</p>
+
+	<p>
+	<a href="http://wmii.suckless.org/">Wmii</a><br/>
+	One of the most influential non-overlapping window managers. Latest versions
+	support columns similar to acme from Plan9. Very fast. Keyboard and mouse driven.
+	Scriptable. Supports the 9p protocol.<br/>
+	<strong>pros:</strong> Layout combinations. Intuitive keyboard shortcuts. Tags on windows.<br/>
+	<strong>cons:</strong> No clear roadmap. Not as dynamic as its the previous version.
+	</p>
+
+	<p>
+	<a href="http://awesome.naquadah.org/">Awesome WM</a><br/>
+	The latest offering on non-overlapping window managers. Attempts to integrate the
+	best ideas from existing tiling window managers. More flexible and user oriented. Offers
+	modern features such as integration with Gnome, systray and Xinerama. Very configurable status bar. 
+	Really fast. <br/>
+	<strong>pros:</strong> User requests are honoured. Modern features. Based on XCB instead of Xlib.<br/>
+	<strong>cons:</strong> May eventually suffer from feature creep.
+	</p>
+
+	<h2>Applications</h2>
+
+	<p>
+	<a href="http://en.wikipedia.org/wiki/Archy">Archy</a><br/>
+	The experimental interface attempting to follow Jef Raskins thoughts on usability.
+	Works on many platforms. Radical thinking. At the moment only editing text.<br/>
+	<strong>pros:</strong> Nice and clean UI. Interesting future.<br/>
+	<strong>cons:</strong> Reminds Emacs at several occasions. Project is dead.
+	</p>
+
+
+	<p>
+	<a href="http://bumptop.com">Bumptop</a><br/>
+	Experimental desktop table. Based on direct manipulation of files and folder in 3D.
+	Cool ideas regarding grouping and searching. Uses mouse/pointer gestures.<br/>
+	<strong>pros:</strong> UI similar to real life. Nice graphics.<br/>
+	<strong>cons:</strong> Unknown roadmap. A prototype only. Not sure if it moves away from desktop.
+	</p>
+
+
+	<p>
+	<a href="http://www.impure.com/">Impure</a><br/>
+	A generic framework that allows building vizualizations from "lego" blocks of basic modules. 
+	Contains data sources, APIS, operators and several visualization types that need no programming code
+	at all. Very friendly interface that runs directly from the web browser.
+	Cool ideas regarding grouping and searching. Uses mouse/pointer gestures.<br/>
+	<strong>pros:</strong> Connecting basic blocks is a very intuitive UI. Can be used by business analysts as well.<br/>
+	<strong>cons:</strong> Flash based. No open-source. Limited by modules available.
+	</p>
+
+	<p>
+	<a href="https://edge.launchpad.net/lowfat">Lowfat</a><br/>
+	The desktop viewer from the future. Impressive graphics. Direct manipulation. Zooming
+	and panning on photos. Uses Open Gl<br/>
+	<strong>pros:</strong> Very intuitive. Next generation look and feel.<br/>
+	<strong>cons:</strong> No stable release. Unknown roadmap. Uncertain future.
+	</p>
+
+	<p>
+	<a href="http://www.uzbl.org/">Uzbl</a><br/>
+	Web browser based on the Unix philosophy. Uses Webkit. Very flexible and configurable. Works like vimperator
+	<br/>
+	<strong>pros:</strong> Perfect for keyboard users. Extended via scripts.<br/>
+	<strong>cons:</strong> A little spartan UI. Not suitable for novice users.
+	</p>
+
+	<p>
+	<a href="http://www.opencroquet.org/">Croquet</a><br/>
+	Virtual words for users. Collaborative environment. The Internet as seen in the movies.
+	Keeps backwards compatibility with current applications. Uses a virtual machine and
+	is based on OpenGL. Freedom to design the interface in 3D. <br/>
+	<strong>pros:</strong> User centered. Open source. 3D world collaboration.<br/>
+	<strong>cons:</strong> Academic prototype. Limited networking. Not many people know smalltalk/squeak.
+	</p>
+
+
+	<p>
+	<a href="http://xcruiser.sourceforge.net/">xcruiser</a><br/>
+	Move into the galaxy of your filesystem. Navigate in 3D inside your
+	folder and files. <br/>
+	<strong>pros:</strong> Interesting idea. Really fast.<br/>
+	<strong>cons:</strong> Not very intuitive. Development seems stalled.
+	</p>
+
+	<p>
+	<a href="http://www.cse.yorku.ca/~oz/wily/">wily</a>/<a href="http://en.wikipedia.org/wiki/Acme_%28Plan_9%29">acme</a><br/>
+	A text editor, Unix plumber, mail client, filemanager. 
+	The universal application for command line lovers. Another great
+	idea by 
+	<a href="http://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs">Plan9</a> .
+	Endless abilities with the number of scripts and 
+	console application available on Unix systems.<br/>
+	<strong>pros:</strong> Power users will love it. Really fast and slick.<br/>
+	<strong>cons:</strong> Casual users would not even understand what is going on.
+	</p>
+
+	<p>
+	<a href="http://www.glscube.org/">Glscube</a><br/>
+	Semantic Storage for GNU/Linux. Filesystem on top of database. Dynamic directories
+	by tagging. Backwards compatibility via FUSE module for POSIX applications. Graphical
+	frontend prototype.<br/>
+	<strong>pros: </strong> Well thought idea. Even better implementation. Desktop agnostic.<br/>
+	<strong>cons: </strong> Heavy on resources. Requires external database. Stalled development.
+	</p>
+
+
+	<h2>Operating Systems related</h2>
+
+	<p>
+	Mezzo<br/>
+	The user interface from the <a href="http://www.symphonyos.com/">Symphony OS</a>. User centered. Tries to lock
+	down and simplify the desktop. Interesting concepts behind the graphics.
+	Separate engine for widgets.<br/>
+	<strong>pros:</strong> Well thought graphics. Live CD available.<br/>
+	<strong>cons:</strong> Not complete yet. Uncertain future.
+	</p>
+
+	<p>
+	<a href="http://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs">Plan9</a><br/>
+	One of the most interesting Operating Systems around. Unix done right
+	from the original creators of Unix itself. Built for the network. Can share folder/application/devices
+	across the network. Universal mounting of everything. Several ideas like the 9p protocol
+	have even reached the Linux kernel. New GUI doing away with X-windows. Sadly it seems
+	it has failed to amass the critical user base.<br/>
+	<strong>pros:</strong> Unix at its best. Would be the next generation OS.<br/>
+	<strong>cons:</strong> It has failed. Limited hardware support. Development is slow/stopped.
+	</p>
+
+
+	<p>
+	<a href="http://www.minix3.org/">Minix</a><br/>
+	The POSIX OS built by Tannenbaum himself. Version 3.0 is a micro-kernel. Goal
+	is to make a computer as reliable as a washing machine/car. Kernel is less
+	than 4000 lines of code. Light footprint. Not only an academic prototype.<br/>
+	<strong>pros:</strong> Open source micro-kernel (QNX is closed). POSIX compatible. Supports X-windows.<br/>
+	<strong>cons:</strong> Limited hardware support. Overshadowed by Linux.
+	</p>
+
+	<p>
+	<a href="http://wiki.laptop.org/go/Home">One laptop per child</a><br/>
+	The project that has reached even the non-technical press. Several developing countries have ordered it.
+	Powered by Fedora Linux. Since it has a small screen and is destined to be used by children
+	has implemented several interesting ideas regarding usability.<br/>
+	<strong>pros:</strong> Sugar interface breaks the desktop metaphor. Simple and minimalistic UI<br/>
+	<strong>cons:</strong> Not directly available to consumers. A bit underpowered.
+	</p>
+
+
+
+	</div>					
+
+	<!-- content-wrap ends here -->		
+	</div></div>
+
+	<!-- footer starts here-->	
+	<div id="footer-wrap">
+
+	<!-- columns starts here-->		
+	<div id="columns">
+
+	<div class="col3">
+	<h3>Interaction</h3>
+	<ul>
+	<li><a href="http://processing.org/">Processing.org</a></li>
+	<li><a href="http://www.openframeworks.cc/">Open Frameworks</a></li>
+	<li><a href="links.html">More...</a></li>
+	</ul>
+	</div>
+	<div class="col3-center">
+	<h3>Graphics</h3>
+	<ul>
+	<li><a href="http://cairographics.org/">Cairo</a></li>
+	<li><a href="http://www.enlightenment.org/">Enlightenment</a></li>
+	<li><a href="links.html">More...</a></li>
+	</ul>
+	</div>
+	<div class="col3">
+	<h3>Physics</h3>
+	<ul>
+	<li><a href="http://www.box2d.org/index.html">Box 2D</a></li>
+	<li><a href="http://code.google.com/p/chipmunk-physics/">Chipmunk</a></li>
+	<li><a href="links.html">More...</a></li>
+	</ul>
+	</div>
+
+	<!-- columns ends -->
+	</div>	
+
+	<div id="footer-bottom">		
+	<p>
+	&copy; 2006-2012 <a href="contact.html">Kostis Kapelonis</a> |
+	Hosting by 
+	<a href="http://sourceforge.net/projects/elevate"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=180091&amp;type=10" width="80" height="15" alt="Get Project Elevate at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a> | 
+	Design by <a href="http://www.styleshout.com/">styleshout</a> |
+	<a href="index.html">Home</a> |
+	<a href="http://validator.w3.org/check?uri=referer">XHTML</a> |
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+	</p>		
+	</div>	
+
+	<!-- footer ends-->		
+	</div>
+
+	</body>
+	</html>
