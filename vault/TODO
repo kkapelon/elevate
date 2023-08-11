@@ -1,0 +1,4 @@
+Show the size of files when searched
+Add a rollback to the database if anything goes wrong
+Cope with moving files from different filesystems.
+

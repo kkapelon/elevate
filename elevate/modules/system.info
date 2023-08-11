@@ -1,0 +1,19 @@
+[General]
+description = system information
+keyword = system info
+type = info
+
+[info]
+object = processor cpu
+property = speed type megaherz
+command = cat /proc/cpuinfo
+
+[info]
+object = memory RAM
+property = free size left
+command = free
+
+[info]
+object = disk space
+property =left size 
+command = df -h

@@ -1,0 +1,38 @@
+About Project Elevate
+============================================================================
+
+Project Elevate is my personal experiment for a better User Interface 
+that suits my needs without resorting to the WIMP desktop 
+like GNOME or KDE. Since I use open source libraries to build it,
+I also release it as open source, in case somebody else finds interesting
+my ideas.
+
+To learn more about Project Elevate visit its website
+at http://elevate.sourceforge.net
+
+
+Syndesis 
+============================================================================
+Syndesis is just a collection of graphical utility applications.
+They can be used standalone or via project elevate.
+
+Apart from the usual stuff (gtk+,glib,cairo) you also need the curl headers to compile them. The package is named
+libcurl3-dev in Debian Systems (possibly Ubuntu too).
+
+The applications are
+
+1)syndownload. A wrapper of curl. Takes a single argument (a URL). The application is non-interactive once it starts.
+
+2)synview. A scrolling text viewer. Takes a single argument (file to open). In theory it should handle files of any size, since it reads them dynamically as the text scrolls.
+
+Keyboard shotcuts:
+Esc = Quit
+Space = Stop/Resume scrolling
+
+
+3)synnet. A network monitoring application for Linux. Takes no arguments.
+
+Keyboard shortcuts:
+Esc = Quit
+Left = Previous Network Interface
+Right = Next Network Interface

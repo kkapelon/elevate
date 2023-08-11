@@ -1,0 +1,68 @@
+2007-11-18 13:25  kkapelon
+
+	* src/engine.c, src/engine.h, src/files.c, src/mod_strings.h,
+	  src/modapp.h: Complete parsing for modules.
+
+2007-11-18 12:35  kkapelon
+
+	* modules/cdrecord.modapp, modules/feh.app, modules/firefox.app,
+	  modules/gftp.app, modules/gunzip.modapp, modules/gzip.modapp,
+	  modules/mplayer.app, modules/nmap.modapp, modules/pdfinfo.modapp,
+	  modules/system.info, modules/tail.modapp, modules/vim.app,
+	  modules/wget.modapp, modules/xpdf.app, modules/xterm.app,
+	  src/Makefile.am, src/Makefile.in, src/files.c, src/modapp.c,
+	  src/modapp.h: Initial support for reading mod_apps.
+
+2007-11-17 14:34  kkapelon
+
+	* ChangeLog, Makefile.am, Makefile.in, configure, configure.ac,
+	  modules, modules/Makefile.am, modules/Makefile.in,
+	  modules/cdrecord.modapp, modules/feh.app, modules/firefox.app,
+	  modules/gftp.app, modules/gunzip.modapp, modules/gzip.modapp,
+	  modules/mplayer.app, modules/nmap.modapp, modules/pdfinfo.modapp,
+	  modules/system.info, modules/tail.modapp, modules/vim.app,
+	  modules/wget.modapp, modules/xpdf.app, modules/xterm.app: Added
+	  sample modules that are installed in the system directory
+
+2007-11-17 12:53  kkapelon
+
+	* src/files.c: Added ability to load modules located at the system
+	  directory.
+
+2007-10-28 22:21  kkapelon
+
+	* src/engine.c, src/engine.h, src/lang.c, src/parser.c: Launching
+	  application now works!
+
+2007-10-28 21:37  kkapelon
+
+	* src/engine.c, src/engine.h, src/lang.c, src/lang.h: Application
+	  lookup works.
+
+2007-10-28 20:41  kkapelon
+
+	* src/Makefile.am, src/Makefile.in, src/elevate.c, src/lang.c,
+	  src/lang.h, src/parser.c, src/parser.h: Started working on the
+	  parser
+
+2007-10-28 18:36  kkapelon
+
+	* src/Makefile.am, src/Makefile.in, src/elevate.c, src/engine.c,
+	  src/engine.h, src/files.c, src/files.h: Application information
+	  is now stored in memory.
+
+2007-10-28 10:54  kkapelon
+
+	* src/Makefile.am, src/Makefile.in, src/app.c, src/app.h,
+	  src/elevate.c, src/files.c, src/mod_strings.h: Parsing of
+	  application modules
+
+2007-10-18 20:01  kkapelon
+
+	* ., AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am,
+	  Makefile.in, NEWS, README, aclocal.m4, configure, configure.ac,
+	  depcomp, install-sh, missing, src, src/Makefile.am,
+	  src/Makefile.in, src/elevate.c, src/files.c, src/files.h,
+	  src/gfx.c, src/gfx.h, src/mod_strings.h: New elevate version
+	  (cairo-based)
+

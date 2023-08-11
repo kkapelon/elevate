@@ -1,0 +1,20 @@
+About Project Elevate
+============================================================================
+
+Project Elevate is my personal experiment for a better User Interface 
+that suits my needs without resorting to the WIMP desktop 
+like GNOME or KDE. Since I use open source libraries to build it,
+I also release it as open source, in case somebody else finds interesting
+my ideas.
+
+To learn more about Project Elevate visit its website
+at http://elevate.sourceforge.net
+
+
+Installing Central Hub
+============================================================================
+
+Central Hub depends on GTK+
+
+Install central_hub using again ./configure && make && make install
+
