@@ -214,7 +214,7 @@ td {
 	clear: both;
 	float: left;
 	width: 100%;
-	background: #12120f url(https://elevate.sourceforge.net/footer-top.jpg) repeat-x left bottom;
+	background: #12120f url(./img/footer-top.jpg) repeat-x left bottom;
 }
 #content {
 	text-align: left;	
@@ -245,7 +245,7 @@ td {
 }
 #sidebar ul.sidemenu li {
 	padding: 0; 
-	background: url(https://elevate.sourceforge.net/bullet.jpg) no-repeat .5em .6em;
+	background: url(./img/bullet.jpg) no-repeat .5em .6em;
 	border-bottom: 1px solid #211E20; 
 	list-style:none;
 }
