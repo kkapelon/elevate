@@ -1,18 +1,16 @@
-About Project Elevate
-============================================================================
+# About Project Elevate
 
-Project Elevate is my personal experiment for a better User Interface 
-that suits my needs without resorting to the WIMP desktop 
+Project Elevate is my personal experiment for a better User Interface
+that suits my needs without resorting to the WIMP desktop
 like GNOME or KDE. Since I use open source libraries to build it,
 I also release it as open source, in case somebody else finds interesting
 my ideas.
 
 To learn more about Project Elevate visit its website
-at http://elevate.sourceforge.net
+at https://elevate.codepipes.com/
 
+# Syndesis
 
-Syndesis 
-============================================================================
 Syndesis is just a collection of graphical utility applications.
 They can be used standalone or via project elevate.
 
@@ -28,7 +26,6 @@ The applications are
 Keyboard shotcuts:
 Esc = Quit
 Space = Stop/Resume scrolling
-
 
 3)synnet. A network monitoring application for Linux. Takes no arguments.
 
