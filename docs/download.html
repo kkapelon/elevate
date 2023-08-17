@@ -4,94 +4,98 @@
 
 <head>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-<meta name="description" content="Download released modules of Project Elevate."/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<meta name="description" content="Download released modules of Project Elevate." />
 
-<title>Downloads - Project Elevate</title>
-	
+	<title>Downloads - Project Elevate</title>
+
 </head>
 
 <body>
 
 	<!-- navigation starts here -->
 	<div id="nav">
-		
+
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="news.html">News</a></li>
 			<li id="current"><a href="download.html">Download</a></li>
 			<li><a href="screenshots.html">Screenshots</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>			
+			<li><a href="contact.html">Contact</a></li>
 			<li><a href="links.html">Links</a></li>
 		</ul>
-	
+
 	</div>
 
 	<!-- content-wrap starts here -->
-	<div id="content-wrap"><div id="content">	 
-	
-		<div id="sidebar" >	
-		
-			<h3>Page Updated</h3>	
-			<p>8 May 2011</p>
-				
-			<h3>Auto(kung)foo</h3>			
-			<p>
-			All components of Project Elevate are installed
-			with the usual ./configure, make, make install combo.
-			</p>
-				
-				
-			<h3>Licence</h3>
-			<p>
-			Project Elevate is developed under the 
-			<a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.
-			</p>
+	<div id="content-wrap">
+		<div id="content">
 
-			<h3>Cairo</h3>
-			<p>The Cairo library has <a href="http://cairographics.org/">its own site</a>.
-			You can find
-			more information about using it there. Subscribe to the <a href="http://cairographics.org/lists/">mailing lists</a> if you are
-			really interested in Cairo Graphics!
-			</p>
-		
-		</div>	
-	
-		<div id="main">		
-				
-			
-			<h2>Requirements</h2>		
-			<p>
-			In order to run Project Elevate you need to download the source code and compile it yourself.
-			</p>
+			<div id="sidebar">
 
-			<p>
-			Current requirements are <a href="http://www.gtk.org">Glib</a> (the non-graphic
+				<h3>Page Updated</h3>
+				<p>17 August 2023</p>
+
+				<h3>Auto(kung)foo</h3>
+				<p>
+					All components of Project Elevate are installed
+					with the usual ./configure, make, make install combo.
+				</p>
+
+
+				<h3>Licence</h3>
+				<p>
+					Project Elevate is developed under the
+					<a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.
+				</p>
+
+				<h3>Cairo</h3>
+				<p>The Cairo library has <a href="http://cairographics.org/">its own site</a>.
+					You can find
+					more information about using it there. Subscribe to the <a
+						href="http://cairographics.org/lists/">mailing lists</a> if you are
+					really interested in Cairo Graphics!
+				</p>
+
+			</div>
+
+			<div id="main">
+
+
+				<h2>Requirements</h2>
+				<p>
+					In order to run Project Elevate you need to download the source code and compile it yourself.
+				</p>
+
+				<p>
+					Current requirements are <a href="http://www.gtk.org">Glib</a> (the non-graphic
 					part of GTK+ and <a href="http://cairographics.org/">Cairo Graphics</a> (integrated
-						into the latest versions of GTK+.The vault also uses the <a href="http://www.sqlite.org/">Sqlite</a> embedded database.
-						</p>
+					into the latest versions of GTK+.The vault also uses the <a href="http://www.sqlite.org/">Sqlite</a>
+					embedded database.
+				</p>
 
-						<p>
-						All respective packages should already be included in your GNU/Linux distribution. Just make sure that
-						you install the "development" packages (usually the dev word is appended to the package name).
-						If you have already setup your system for gtk/gnome development you are halfway there.
-						</p>
+				<p>
+					All respective packages should already be included in your GNU/Linux distribution. Just make sure
+					that
+					you install the "development" packages (usually the dev word is appended to the package name).
+					If you have already setup your system for gtk/gnome development you are halfway there.
+				</p>
 
-						<h2>Downloading</h2>
-						<p>
-						Use your package manager to download and install the following packages (some of
-							them might already be installed).
-						The names are taken from my <a href="http://www.debian.org">Debian</a>
-						Unstable system but they should be named in a similar way in most GNU/Linux distributions.
-						</p>
+				<h2>Downloading</h2>
+				<p>
+					Use your package manager to download and install the following packages (some of
+					them might already be installed).
+					The names are taken from my <a href="http://www.debian.org">Debian</a>
+					Unstable system but they should be named in a similar way in most GNU/Linux distributions.
+				</p>
 
-						<ul>
-						<li>libgtk2.0-0</li>
-						<li>libgtk2.0-dev</li>
-						<li>libglib2.0-0</li>
-						<li>libglib2.0-dev</li>
+				<ul>
+					<li>libgtk2.0-0</li>
+					<li>libgtk2.0-dev</li>
+					<li>libglib2.0-0</li>
+					<li>libglib2.0-dev</li>
 					<li>libcairo2</li>
 					<li>libcairo2-dev</li>
 					<li>sqlite3</li>
@@ -99,73 +103,76 @@
 					<li>libsqlite3-0</li>
 					<li>libcurl4</li>
 					<li>libcurl4-dev</li>
-					</ul>
+				</ul>
 
-					<p>
+				<p>
 					The installation script of each Elevate application will check if its
 					required libraries are installed or not and it will notify you in case of failure.
-					</p>
+				</p>
 
-					<p>Finally download the components of Project Elevate from the <a href="https://sourceforge.net/projects/elevate/files/">
-					sourceforge release page</a>.
+				<p>Finally download the components of Project Elevate from the <a
+						href="https://github.com/kkapelon/elevate">
+						GitHub release page</a>.
 					You should always fetch the latest version available.
-					</p>
+				</p>
 
-					<h2>Installation</h2>
+				<h2>Installation</h2>
 
-					<p>
+				<p>
 					First decompress the source packages (.tar.gz format). You can do this
 					either with GUI tools or using a terminal. It does not matter.
-					</p>
+				</p>
 
-					<p>
+				<p>
 					Then install each component of Project elevate using the
 					./configure make and make install spell.
-					</p>
+				</p>
 
-					<p>
+				<p>
 					If you want you can add the --prefix option to configure in order to use another
 					installation directory instead of the default /usr/local/.
-					</p>
+				</p>
 
-					<h2>Developer Information</h2>
+				<h2>Developer Information</h2>
 
-					<p>
-					The bleeding edje code of Project elevate is offered via the Subversion Interface of sourceforge.
+				<p>
+					The bleeding edje code of Project elevate is offered via GitHub.
 					Use this command (should be a single line in the terminal).
-					</p>
+				</p>
 
-					<p><code>
-					svn co https://elevate.svn.sourceforge.net/svnroot/elevate/trunk elevate
+				<p><code>
+					git clone https://github.com/kkapelon/elevate.git
 					</code></p>
 
-					<p>
-					to get the latest code. You can also <a href="http://elevate.svn.sourceforge.net/viewvc/elevate/">browse the latest code</a>.
-					</p>
+				<p>
+					to get the latest code. You can also <a href="https://github.com/kkapelon/elevate">browse the latest
+						code</a>.
+				</p>
 
-					<p>
+				<p>
 					While the main code is written in C you need to be familiar with glib development.
 					If you have programmed gtk/gnome applications you are good to go.
 					Otherwise you can find more information in the <a href="http://www.gtk.org">GTK+ site</a>.
 					Browse the <a href="http://www.gtk.org/api/">Glib 2.0 api</a> to get the basic concepts.
 					Cairo Documentation is <a href="http://cairographics.org/documentation/">also available</a> for
 					your viewing pleasure.
-					</p>
+				</p>
 
 
 
-										
-		</div>					
-		
-	<!-- content-wrap ends here -->		
-	</div></div>
 
-	<!-- footer starts here-->	
+			</div>
+
+			<!-- content-wrap ends here -->
+		</div>
+	</div>
+
+	<!-- footer starts here-->
 	<div id="footer-wrap">
-	
-		<!-- columns starts here-->		
+
+		<!-- columns starts here-->
 		<div id="columns">
-	
+
 			<div class="col3">
 				<h3>Interaction</h3>
 				<ul>
@@ -186,28 +193,29 @@
 				<h3>Physics</h3>
 				<ul>
 					<li><a href="http://www.box2d.org/index.html">Box 2D</a></li>
-					<li><a href="http://code.google.com/p/chipmunk-physics/">Chipmunk</a></li>
+					<li><a href="http://chipmunk-physics.net/">Chipmunk</a></li>
 					<li><a href="links.html">More...</a></li>
 				</ul>
 			</div>
-		
-		<!-- columns ends -->
-		</div>	
-	
-		<div id="footer-bottom">		
+
+			<!-- columns ends -->
+		</div>
+
+		<div id="footer-bottom">
 			<p>
-			&copy; 2006-2012 <a href="contact.html">Kostis Kapelonis</a> |
-			Hosting by 
-			<a href="https://github.com/kkapelon/elevate">GitHub Pages</a> | 
-			Design by <a href="http://www.styleshout.com/">styleshout</a> |
-			<a href="index.html">Home</a> |
-            <a href="http://validator.w3.org/check?uri=referer">XHTML</a> |
-			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
-			</p>		
-		</div>	
-	
-	<!-- footer ends-->		
+				&copy; 2006-2012 <a href="contact.html">Kostis Kapelonis</a> |
+				Hosting by
+				<a href="https://github.com/kkapelon/elevate">GitHub Pages</a> |
+				Design by <a href="http://www.styleshout.com/">styleshout</a> |
+				<a href="index.html">Home</a> |
+				<a href="http://validator.w3.org/check?uri=referer">XHTML</a> |
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+			</p>
+		</div>
+
+		<!-- footer ends-->
 	</div>
 
 </body>
+
 </html>
